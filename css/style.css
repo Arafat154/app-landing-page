@@ -1,0 +1,82 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html{
+   font-size: 62.5%;
+   scroll-behavior: smooth;
+}
+:root{
+   --main-color: #7857fe;
+   --box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+   --light-background: #f7f7f7;
+}
+/*-----------
+Navbar start 
+-----------*/
+.navbar{
+   background: var(--main-color) !important;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   box-shadow: var(--box-shadow);
+}
+.navbar i{
+   color: #fff; 
+   font-size: 3rem; 
+}
+.navbar .navbar-brand{
+   font-size: 2.3rem;
+   font-weight: bold;
+}
+.navbar a{
+   color: #fff;
+   font-size: 1.5rem;
+}
+.navbar .nav-link{
+   position: relative;
+   padding: 1.2rem 0;
+}
+.navbar .nav-link::after{
+   content: '';
+   height: 0.2rem;
+   background: #fff;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   transition: 1s;
+   transform: scale(0);
+}
+.navbar .nav-link:hover::after{
+   transform: scale(1);
+}
+/*-----------
+Navbar-end
+-----------*/
+
+
+/*-----------
+Home-start
+-----------*/
+#home{
+   width: 100%;
+   padding: 8rem 0;
+   background: var(--main-color);
+   border-radius: 0 0 15rem 0;
+}
+#home .bold-text h3{
+   color: #fff;
+   font-size: 2.7rem;
+   font-weight: 600;
+}
+#home .light-text p{
+   color: #fff;
+   font-size: 1.4rem;
+}
+#home .home-img img{
+   width: 80%;
+}
+/*-----------
+Home-end
+-----------*/
