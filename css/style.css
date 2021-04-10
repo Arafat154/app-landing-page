@@ -172,7 +172,7 @@ Home-start
    top: -1.9rem;
 }
 #home .home-img img{
-   width: 80%;
+   width: 60%;
    animation: up-down 2s linear infinite;
 }
 /*-----------
