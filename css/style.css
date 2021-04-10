@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 *{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family: 'Ubuntu', sans-serif;
 }
 html{
    font-size: 62.5%;
@@ -11,6 +13,39 @@ html{
    --main-color: #7857fe;
    --box-shadow: 0 5px 15px rgba(0,0,0,0.3);
    --light-background: #f7f7f7;
+}
+@keyframes round{
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
+@keyframes up-down{
+   0%{
+      transform: translateY(2.3rem);
+   }
+   50%{
+      transform: translateY(0);
+   }
+   100%{
+      transform: translateY(2.3rem);
+   }
+}
+@keyframes pulse{
+   0%{
+      transform: scale(0.94);
+      box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+   }
+   70%{
+      transform: scale(1);
+      box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
+   }
+   100%{
+      transform: scale(0.94);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
 }
 /*-----------
 Navbar start 
@@ -35,7 +70,7 @@ Navbar start
 }
 .navbar .nav-link{
    position: relative;
-   padding: 1.2rem 0;
+   padding: 1rem 0;
 }
 .navbar .nav-link::after{
    content: '';
@@ -61,7 +96,7 @@ Home-start
 -----------*/
 #home{
    width: 100%;
-   padding: 8rem 0;
+   padding: 7rem 0;
    background: var(--main-color);
    border-radius: 0 0 15rem 0;
 }
@@ -73,6 +108,34 @@ Home-start
 #home .light-text p{
    color: #fff;
    font-size: 1.4rem;
+}
+#home .button button{
+   padding: 1.8rem 1.3rem;
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   background: #fff;
+   box-shadow: var(--box-shadow);
+   font-size: 1.7rem;
+   font-weight: 500;
+   transition: 0.3s;
+}
+#home .button .d-inline button{
+   padding: 0;
+   width: 5.6rem;
+   height: 5.6rem;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 5.6rem;
+   transition: 0.3s;
+   animation: pulse 1s infinite linear;
+}
+#home .button .d-inline button:hover{
+   animation: none;
+}
+#home button:hover{
+   background: var(--main-color);
+   color: #fff;
 }
 #home .home-img{
    position: relative;
@@ -111,25 +174,6 @@ Home-start
 #home .home-img img{
    width: 80%;
    animation: up-down 2s linear infinite;
-}
-@keyframes round{
-   0%{
-      transform: rotate(0deg);
-   }
-   100%{
-      transform: rotate(360deg);
-   }
-}
-@keyframes up-down{
-   0%{
-      transform: translateY(2rem);
-   }
-   50%{
-      transform: translateY(0);
-   }
-   100%{
-      transform: translateY(2rem);
-   }
 }
 /*-----------
 Home-end
