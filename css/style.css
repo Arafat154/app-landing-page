@@ -74,8 +74,62 @@ Home-start
    color: #fff;
    font-size: 1.4rem;
 }
+#home .home-img{
+   position: relative;
+}
+#home .home-img .circle{
+   width: 30rem;
+   height: 30rem;
+   border-radius: 50%;
+   border: 0.1rem solid rgba(255,255,255,0.3);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   z-index: 1;
+}
+#home .home-img .circle .animated-circle{
+   width: 15rem;
+   height: 0.4rem;
+   background: transparent;
+   position: absolute;
+   left: 50%;
+   top: calc(50% - 0.2rem);
+   transform-origin: left;
+   animation: round 4s linear infinite;
+}
+#home .home-img .circle .animated-circle::before{
+   content: '';
+   width: 4rem;
+   height: 4rem;
+   background: rgba(255,255,255,0.6);
+   border-radius: 50%;
+   position: absolute;
+   left: calc(100% - 2rem);
+   top: -1.9rem;
+}
 #home .home-img img{
    width: 80%;
+   animation: up-down 2s linear infinite;
+}
+@keyframes round{
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+}
+@keyframes up-down{
+   0%{
+      transform: translateY(2rem);
+   }
+   50%{
+      transform: translateY(0);
+   }
+   100%{
+      transform: translateY(2rem);
+   }
 }
 /*-----------
 Home-end
