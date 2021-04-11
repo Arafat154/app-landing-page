@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
 *{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+   margin     : 0;
+   padding    : 0;
+   box-sizing : border-box;
    font-family: 'Ubuntu', sans-serif;
 }
 html{
-   font-size: 62.5%;
+   font-size      : 62.5%;
    scroll-behavior: smooth;
 }
 :root{
-   --main-color: #7857fe;
-   --box-shadow1: 0 5px 15px rgba(0,0,0,0.3);
+   --main-color      : #7857fe;
+   --box-shadow1     : 0 5px 15px rgba(0,0,0,0.3);
    --light-background: #f7f7f7;
-   --box-shadow2: 0 4px 7px rgba(0,0,0,0.3);
+   --box-shadow2     : 0 0 10px rgba(0,0,0,0.2);
 }
 @keyframes round{
    0%{
@@ -36,15 +36,15 @@ html{
 }
 @keyframes pulse{
    0%{
-      transform: scale(0.94);
+      transform : scale(0.94);
       box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
    }
    70%{
-      transform: scale(1);
+      transform : scale(1);
       box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
    }
    100%{
-      transform: scale(0.94);
+      transform : scale(0.94);
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
 }
@@ -52,37 +52,37 @@ html{
 Navbar start 
 -----------*/
 .navbar{
-   background: var(--main-color) !important;
-   padding-top: 2rem;
+   background    : var(--main-color) !important;
+   padding-top   : 2rem;
    padding-bottom: 2rem;
-   box-shadow: var(--box-shadow1);
+   box-shadow    : var(--box-shadow1);
 }
 .navbar i{
-   color: #fff; 
+   color    : #fff; 
    font-size: 3rem; 
 }
 .navbar .navbar-brand{
-   font-size: 2.3rem;
+   font-size  : 2.3rem;
    font-weight: bold;
 }
 .navbar a{
-   color: #fff;
+   color    : #fff;
    font-size: 1.5rem;
 }
 .navbar .nav-link{
    position: relative;
-   padding: 1rem 0;
+   padding : 1rem 0;
 }
 .navbar .nav-link::after{
-   content: '';
-   height: 0.2rem;
+   content   : '';
+   height    : 0.2rem;
    background: #fff;
-   position: absolute;
-   left: 0;
-   bottom: 0;
-   right: 0;
+   position  : absolute;
+   left      : 0;
+   bottom    : 0;
+   right     : 0;
    transition: 0.5s;
-   transform: scale(0);
+   transform : scale(0);
 }
 .navbar .nav-link:hover::after{
    transform: scale(1);
@@ -95,49 +95,49 @@ Navbar start
    outline: none;
 }
 .navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(1){
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform       : rotate(45deg);
+  -ms-transform           : rotate(45deg);
+  transform               : rotate(45deg);
   -webkit-transform-origin: 10% 10%;
-  -ms-transform-origin: 10% 10%;
-  transform-origin: 10% 10%;  
+  -ms-transform-origin    : 10% 10%;
+  transform-origin        : 10% 10%;  
 }
 .navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(2){
    opacity: 0;
-   filter: alpha(opacity=0);
+   filter : alpha(opacity=0);
 }
 .navbar-toggler.x[aria-expanded="true"] .icon-bar:nth-of-type(3){
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform       : rotate(-45deg);
+  -ms-transform           : rotate(-45deg);
+  transform               : rotate(-45deg);
   -webkit-transform-origin: 10% 90%;
-  -ms-transform-origin: 10% 90%;
-  transform-origin: 10% 90%;
+  -ms-transform-origin    : 10% 90%;
+  transform-origin        : 10% 90%;
 }
 .icon-bar{
-   width: 22px;
-   display: block;
-   height: 2px;
-   background-color: #fff;
+   width             : 22px;
+   display           : block;
+   height            : 2px;
+   background-color  : #fff;
    -webkit-transition: all 0.2s;
-   transition: all 0.2s;
+   transition        : all 0.2s;
 }
 .icon-bar+ .icon-bar{
    margin-top: 4px;
 }
 .icon-bar:nth-of-type(1){
   -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
+  -ms-transform    : rotate(0);
+  transform        : rotate(0);
 }
 .icon-bar:nth-of-type(2){
    opacity: 1;
-   filter: alpha(opacity=100);
+   filter : alpha(opacity=100);
 }
 .icon-bar:nth-of-type(3){
    -webkit-transform: rotate(0);
-   -ms-transform: rotate(0);
-   transform: rotate(0);
+   -ms-transform    : rotate(0);
+   transform        : rotate(0);
 }
 /*-----------
 Navbar-end
@@ -148,117 +148,117 @@ Navbar-end
 Home-start
 -----------*/
 #home{
-   width: 100%;
-   padding: 7rem 0;
-   background: var(--main-color);
+   width        : 100%;
+   padding      : 7rem 0;
+   background   : var(--main-color);
    border-radius: 0 0 15rem 0;
 }
 #home .container{
    position: relative;
 }
 #home .effect-box{
-   width: 100%;
-   height: 100%;
-   z-index: -1;
+   width     : 100%;
+   height    : 100%;
+   z-index   : -1;
    background: red;
 }
 #home .effect1{
-   position: absolute;
-   color: orange;
+   position : absolute;
+   color    : orange;
    font-size: 2rem;
-   top: 8%;
-   left: 35%;
+   top      : 8%;
+   left     : 35%;
    animation: round 2s infinite linear;
 }
 #home .effect2{
-   position: absolute;
-   color: #f7f7f7;
+   position : absolute;
+   color    : #f7f7f7;
    font-size: 2.5rem;
-   top: 25%;
-   right: 5%;
+   top      : 25%;
+   right    : 5%;
    animation: round 2.5s infinite linear;
 }
 #home .effect3{
-   position: absolute;
-   color: orange;
+   position : absolute;
+   color    : orange;
    font-size: 2rem;
-   bottom: 7%;
-   left: 10%;
+   bottom   : 7%;
+   left     : 10%;
    animation: up-down 1.5s infinite linear;
 }
 #home .bold-text h3{
-   color: #fff;
-   font-size: 2.7rem;
+   color      : #fff;
+   font-size  : 2.7rem;
    font-weight: 600;
 }
 #home .light-text p{
-   color: #fff;
+   color    : #fff;
    font-size: 1.4rem;
 }
 #home .button button{
-   padding: 1.8rem 1.3rem;
-   outline: none;
-   border: none;
+   padding      : 1.8rem 1.3rem;
+   outline      : none;
+   border       : none;
    border-radius: 5rem;
-   background: #fff;
-   box-shadow: var(--box-shadow1);
-   font-size: 1.7rem;
-   font-weight: 500;
-   transition: 0.3s;
+   background   : #fff;
+   box-shadow   : var(--box-shadow1);
+   font-size    : 1.7rem;
+   font-weight  : 500;
+   transition   : 0.3s;
 }
 #home .button .d-inline button{
-   padding: 0;
-   width: 5.6rem;
-   height: 5.6rem;
+   padding      : 0;
+   width        : 5.6rem;
+   height       : 5.6rem;
    border-radius: 50%;
-   text-align: center;
-   line-height: 5.6rem;
-   transition: 0.3s;
-   animation: pulse 1s infinite linear;
+   text-align   : center;
+   line-height  : 5.6rem;
+   transition   : 0.3s;
+   animation    : pulse 1s infinite linear;
 }
 #home .button .d-inline button:hover{
    animation: none;
 }
 #home button:hover{
    background: var(--main-color);
-   color: #fff;
+   color     : #fff;
 }
 #home .home-img{
    position: relative;
 }
 #home .home-img .circle{
-   width: 30rem;
-   height: 30rem;
+   width        : 30rem;
+   height       : 30rem;
    border-radius: 50%;
-   border: 0.1rem solid rgba(255,255,255,0.3);
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   z-index: 1;
+   border       : 0.1rem solid rgba(255,255,255,0.3);
+   position     : absolute;
+   top          : 50%;
+   left         : 50%;
+   transform    : translate(-50%,-50%);
+   z-index      : 1;
 }
 #home .home-img .circle .animated-circle{
-   width: 15rem;
-   height: 0.4rem;
-   background: transparent;
-   position: absolute;
-   left: 50%;
-   top: calc(50% - 0.2rem);
+   width           : 15rem;
+   height          : 0.4rem;
+   background      : transparent;
+   position        : absolute;
+   left            : 50%;
+   top             : calc(50% - 0.2rem);
    transform-origin: left;
-   animation: round 4s linear infinite;
+   animation       : round 4s linear infinite;
 }
 #home .home-img .circle .animated-circle::before{
-   content: '';
-   width: 4rem;
-   height: 4rem;
-   background: rgba(255,255,255,0.6);
+   content      : '';
+   width        : 4rem;
+   height       : 4rem;
+   background   : rgba(255,255,255,0.6);
    border-radius: 50%;
-   position: absolute;
-   left: calc(100% - 2rem);
-   top: -1.9rem;
+   position     : absolute;
+   left         : calc(100% - 2rem);
+   top          : -1.9rem;
 }
 #home .home-img img{
-   width: 60%;
+   width    : 60%;
    animation: up-down 2s linear infinite;
 }
 /*-----------
@@ -270,30 +270,30 @@ Home-end
 Features start 
 ------------*/
 #features{
-   width: 100%;
-   padding: 7rem 0;
+   width        : 100%;
+   padding      : 7rem 0;
    border-radius: 0 0 15rem 0;
 }
 #features .container h3{
-   font-size: 3rem;
+   font-size  : 3rem;
    font-weight: bold;
 }
 #features .container h3 span{
    color: var(--main-color);
 }
 #features .card{
-   border: none;
-   width: 20rem;
+   border    : none;
+   width     : 20rem;
    box-shadow: var(--box-shadow2);
-   margin: 0 auto;
+   margin    : 0 auto;
 }
 #features .card i{
-   color: var(--main-color);
-   font-size: 4.5rem;
+   color     : var(--main-color);
+   font-size : 4.5rem;
    margin-top: 2rem;
 }
 #features .card h3{
-   font-size: 1.8rem;
+   font-size  : 1.8rem;
    font-weight: 600;
 }
 /*-----------
