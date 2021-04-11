@@ -15,6 +15,38 @@ html{
    --light-background: #f7f7f7;
    --box-shadow2     : 0px 10px 30px rgba(57, 56, 61, 0.205);
 }
+
+/*----------
+ripple start
+----------*/
+.prepare-ripple {
+  overflow: hidden;
+  position: relative;
+}
+.ripple {
+  background   : rgba(255, 255, 255, .3);
+  border-radius: 100%;
+  display      : block; 
+  position     : absolute;
+  transform    : scale(0);
+}
+.ripple.on-animate {
+  animation: ripple 0.65s linear;
+}
+/*----------
+ripple end
+----------*/
+
+
+/*--------------
+animations start
+--------------*/
+@keyframes ripple {
+  100% {
+    opacity: 0; 
+    transform: scale(2.5);
+  }
+}
 @keyframes round{
    0%{
       transform: rotate(0deg);
@@ -48,6 +80,11 @@ html{
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
 }
+/*------------
+animations end
+------------*/
+
+
 /*-----------
 Navbar start 
 -----------*/
@@ -71,7 +108,7 @@ Navbar start
 }
 .navbar .nav-link{
    position: relative;
-   padding : 1rem 0;
+   padding : 1rem 0 1rem 1rem;
 }
 .navbar .nav-link::after{
    content   : '';
