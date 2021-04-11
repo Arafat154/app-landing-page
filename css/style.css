@@ -10,11 +10,38 @@ html{
    scroll-behavior: smooth;
 }
 :root{
-   --main-color      : #7857fe;
+   --main-color1     : #7857fe;
+   --main-color2     : #f7f7f7;
    --box-shadow1     : 0 5px 15px rgba(0,0,0,0.3);
    --light-background: #f7f7f7;
    --box-shadow2     : 0px 10px 30px rgba(57, 56, 61, 0.205);
+   --bg-1            : #e91e63;
+   --bg-2            : #eba834;
+   --bg-3            : #09d69c;
+   --bg-4            : #7857fe;
 }
+
+
+/*-----------------
+common design start
+-----------------*/
+.section-padding{
+   padding: 7rem 0;
+}
+img{
+   width: 60%;
+}
+h3 {
+   font-size: 3rem;
+   font-weight: bold;
+}
+span{
+   color: var(--main-color1);
+}
+/*---------------
+common design end
+---------------*/
+
 
 /*----------
 ripple start
@@ -89,7 +116,7 @@ animations end
 Navbar start 
 -----------*/
 .navbar{
-   background    : var(--main-color) !important;
+   background    : var(--main-color1) !important;
    padding-top   : 2rem;
    padding-bottom: 2rem;
    box-shadow    : var(--box-shadow1);
@@ -186,8 +213,7 @@ Home-start
 -----------*/
 #home{
    width        : 100%;
-   padding      : 7rem 0;
-   background   : var(--main-color);
+   background   : var(--main-color1);
    border-radius: 0 0 15rem 0;
 }
 #home .container{
@@ -257,13 +283,13 @@ Home-start
    animation: none;
 }
 #home button:hover{
-   background: var(--main-color);
+   background: var(--main-color1);
    color     : #fff;
 }
-#home .home-img{
+#home .img-box{
    position: relative;
 }
-#home .home-img .circle{
+#home .img-box .circle{
    width        : 30rem;
    height       : 30rem;
    border-radius: 50%;
@@ -274,7 +300,7 @@ Home-start
    transform    : translate(-50%,-50%);
    z-index      : 1;
 }
-#home .home-img .circle .animated-circle{
+#home .img-box .circle .animated-circle{
    width           : 15rem;
    height          : 0.4rem;
    background      : transparent;
@@ -284,7 +310,7 @@ Home-start
    transform-origin: left;
    animation       : round 4s linear infinite;
 }
-#home .home-img .circle .animated-circle::before{
+#home .img-box .circle .animated-circle::before{
    content      : '';
    width        : 4rem;
    height       : 4rem;
@@ -294,8 +320,7 @@ Home-start
    left         : calc(100% - 2rem);
    top          : -1.9rem;
 }
-#home .home-img img{
-   width    : 60%;
+#home .img-box img{
    animation: up-down 2s linear infinite;
 }
 /*-----------
@@ -306,18 +331,6 @@ Home-end
 /*------------
 Features start 
 ------------*/
-#features{
-   width        : 100%;
-   padding      : 7rem 0;
-   border-radius: 0 0 15rem 0;
-}
-#features .container h3{
-   font-size  : 3rem;
-   font-weight: bold;
-}
-#features .container h3 span{
-   color: var(--main-color);
-}
 #features .card{
    border    : none;
    width     : 20rem;
@@ -325,7 +338,7 @@ Features start
    margin    : 0 auto;
 }
 #features .card i{
-   color     : var(--main-color);
+   color     : var(--main-color1);
    font-size : 4.5rem;
    margin-top: 2rem;
 }
@@ -335,4 +348,46 @@ Features start
 }
 /*-----------
 Features end 
+-----------*/
+
+/*-------------
+Fun facts start 
+-------------*/
+#fun-facts{
+   background: var(--main-color2);
+}
+#fun-facts .text p{
+   font-size: 1.5rem;
+}
+#fun-facts .img-box img{
+   animation: up-down 2s linear infinite;
+}
+#fun-facts .card{
+   border: none;
+   box-shadow: var(--box-shadow1);
+   border-radius: 1rem;
+}
+#fun-facts .card .number{
+   color: #fff;
+   font-size: 3rem;
+   font-weight: 500;
+}
+#fun-facts .card p{
+   color: #fff;
+   font-size: 1.3rem;
+}
+#fun-facts .card.bg-1{
+   background: var(--bg-1);
+}
+#fun-facts .card.bg-2{
+   background: var(--bg-2);
+}
+#fun-facts .card.bg-3{
+   background: var(--bg-3);
+}
+#fun-facts .card.bg-4{
+   background: var(--bg-4);
+}
+/*-----------
+Fun facts end
 -----------*/

@@ -1,0 +1,6 @@
+@media (max-width: 767px){
+   #fun-facts .card{
+      width: 20rem;
+      margin: 2rem auto;
+   }
+}
