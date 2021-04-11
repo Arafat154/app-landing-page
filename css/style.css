@@ -11,8 +11,9 @@ html{
 }
 :root{
    --main-color: #7857fe;
-   --box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+   --box-shadow1: 0 5px 15px rgba(0,0,0,0.3);
    --light-background: #f7f7f7;
+   --box-shadow2: 0 4px 7px rgba(0,0,0,0.3);
 }
 @keyframes round{
    0%{
@@ -54,7 +55,7 @@ Navbar start
    background: var(--main-color) !important;
    padding-top: 2rem;
    padding-bottom: 2rem;
-   box-shadow: var(--box-shadow);
+   box-shadow: var(--box-shadow1);
 }
 .navbar i{
    color: #fff; 
@@ -200,7 +201,7 @@ Home-start
    border: none;
    border-radius: 5rem;
    background: #fff;
-   box-shadow: var(--box-shadow);
+   box-shadow: var(--box-shadow1);
    font-size: 1.7rem;
    font-weight: 500;
    transition: 0.3s;
@@ -264,3 +265,37 @@ Home-start
 Home-end
 -----------*/
 
+
+/*------------
+Features start 
+------------*/
+#features{
+   width: 100%;
+   padding: 7rem 0;
+   border-radius: 0 0 15rem 0;
+}
+#features .container h3{
+   font-size: 3rem;
+   font-weight: bold;
+}
+#features .container h3 span{
+   color: var(--main-color);
+}
+#features .card{
+   border: none;
+   width: 20rem;
+   box-shadow: var(--box-shadow2);
+   margin: 0 auto;
+}
+#features .card i{
+   color: var(--main-color);
+   font-size: 4.5rem;
+   margin-top: 2rem;
+}
+#features .card h3{
+   font-size: 1.8rem;
+   font-weight: 600;
+}
+/*-----------
+Features end 
+-----------*/
