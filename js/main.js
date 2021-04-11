@@ -41,5 +41,5 @@ $('.owl-carousel').owlCarousel({
 
 /*--------ripple effect initializer---------*/
 $(function(){
-  $('.ripple-btn, a, .box').rippleEffect();
+  $('.ripple-btn, .nav-link, .box').rippleEffect();
 });
