@@ -449,3 +449,33 @@ Download start
 /*----------
 Download end 
 ----------*/
+
+
+/*--------
+Work start
+--------*/
+#work .card{
+   border: none;
+   background: var(--main-color2);
+   padding-top: 2rem;
+   transition: 0.4s;
+}
+#work .card:hover{
+   box-shadow: var(--box-shadow2);
+}
+#work .card span{
+   display: block;
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   line-height: 5rem;
+   background: var(--main-color1);
+   text-align: center;
+   color: #fff;
+   margin: 0 auto;
+   font-size: 2rem;
+   font-weight: 500;
+}
+/*------
+Work end
+------*/
