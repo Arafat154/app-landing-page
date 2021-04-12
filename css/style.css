@@ -425,6 +425,7 @@ Download start
 #download .card{
    border: none;
    box-shadow: var(--box-shadow1);
+   padding-bottom: 2rem;
 }
 #download .row h3{
    color: #000;
