@@ -18,7 +18,6 @@ html{
    --bg-1            : #e91e63;
    --bg-2            : #eba834;
    --bg-3            : #09d69c;
-   --bg-4            : #7857fe;
 }
 
 
@@ -27,9 +26,6 @@ common design start
 -----------------*/
 .section-padding{
    padding: 8rem 0;
-}
-img{
-   width: 60%;
 }
 h3 {
    font-size: 3rem;
@@ -321,6 +317,7 @@ Home-start
    top          : -1.9rem;
 }
 #home .img-box img{
+   width: 60%;
    animation: up-down 2s linear infinite;
 }
 /*-----------
@@ -350,6 +347,7 @@ Features start
 Features end 
 -----------*/
 
+
 /*-------------
 Fun facts start 
 -------------*/
@@ -360,6 +358,7 @@ Fun facts start
    font-size: 1.5rem;
 }
 #fun-facts .img-box img{
+   width: 60%;
    animation: up-down 2s linear infinite;
 }
 #fun-facts .card{
@@ -374,7 +373,7 @@ Fun facts start
 }
 #fun-facts .card p{
    color: #fff;
-   font-size: 1.3rem;
+   font-size: 1.8rem;
 }
 #fun-facts .card.bg-1{
    background: var(--bg-1);
@@ -386,7 +385,7 @@ Fun facts start
    background: var(--bg-3);
 }
 #fun-facts .card.bg-4{
-   background: var(--bg-4);
+   background: var(--main-color1);
 }
 /*-----------
 Fun facts end
@@ -403,3 +402,49 @@ Screenshots start
 /*-------------
 Screenshots end 
 -------------*/
+
+
+/*------------
+Download start
+------------*/
+#download{
+   width: 100%;
+   background: var(--main-color1);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#download h3{
+   color: #fff;
+}
+#download h3 span{
+   color: #000;
+}
+#download .card{
+   border: none;
+   box-shadow: var(--box-shadow1);
+}
+#download .row h3{
+   color: #000;
+   font-size : 1.8rem;
+   font-weight: 600;
+}
+#download .row i{
+   margin-top: 2rem;
+   color : var(--main-color1);
+   font-size : 4.5rem;
+}
+#download button {
+   padding: 1.8rem 1.3rem;
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   background: var(--main-color1);
+   box-shadow: var(--box-shadow1);
+   font-size: 1.7rem;
+   font-weight: 500;
+   color: #fff;
+   transition: 0.3s;
+}
+/*----------
+Download end 
+----------*/
