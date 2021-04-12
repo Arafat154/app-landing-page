@@ -391,3 +391,15 @@ Fun facts start
 /*-----------
 Fun facts end
 -----------*/
+
+
+/*---------------
+Screenshots start
+---------------*/
+#screenshots .item{
+   width: 60%;
+   margin: 0 auto;
+}
+/*-------------
+Screenshots end 
+-------------*/
