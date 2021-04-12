@@ -27,12 +27,19 @@ common design start
 .section-padding{
    padding: 8rem 0;
 }
-h3 {
+.h3 {
    font-size: 3rem;
    font-weight: bold;
 }
-span{
+.span{
    color: var(--main-color1);
+}
+.card-h3{
+   font-size : 1.8rem;
+   font-weight: 600;
+}
+.margin-bottom{
+   margin-bottom: 4rem;
 }
 /*---------------
 common design end
@@ -339,10 +346,6 @@ Features start
    font-size : 4.5rem;
    margin-top: 2rem;
 }
-#features .card h3{
-   font-size  : 1.8rem;
-   font-weight: 600;
-}
 /*-----------
 Features end 
 -----------*/
@@ -425,8 +428,6 @@ Download start
 }
 #download .row h3{
    color: #000;
-   font-size : 1.8rem;
-   font-weight: 600;
 }
 #download .row i{
    margin-top: 2rem;
