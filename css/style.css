@@ -549,7 +549,7 @@ Client start
    background: var(--main-color2);
 }
 #client .card{
-   width: 25rem;
+   width: 20rem;
    border: none;
    margin: 0 auto;
    background: var(--main-color2);
