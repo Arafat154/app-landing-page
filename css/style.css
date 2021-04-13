@@ -549,11 +549,11 @@ Client start
    background: var(--main-color2);
 }
 #client .card{
-   width: 20rem;
+   width: 25rem;
    border: none;
    margin: 0 auto;
    background: var(--main-color2);
-   box-shadow: var(--box-shadow1);
+   box-shadow: var(--box-shadow2);
 }
 #client .card .img-box{
    width: 10rem;
