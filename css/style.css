@@ -319,7 +319,7 @@ Home-start
    color    : #fff;
    font-size: 1.4rem;
 }
-#home .button button{
+#home .button-box button{
    padding      : 1.8rem 1.3rem;
    outline      : none;
    border       : none;
@@ -330,20 +330,19 @@ Home-start
    font-weight  : 500;
    transition   : 0.3s;
 }
-#home .button .d-inline button{
+#home .button-box .d-inline button{
    padding      : 0;
    width        : 5.6rem;
    height       : 5.6rem;
    border-radius: 50%;
    text-align   : center;
    line-height  : 5.6rem;
-   transition   : 0.3s;
    animation    : pulse 1s infinite linear;
 }
-#home .button .d-inline button:hover{
+#home .button-box .d-inline button:hover{
    animation: none;
 }
-#home button:hover{
+#home .button-box button:hover{
    background: var(--main-color1);
    color     : #fff;
 }
@@ -494,7 +493,7 @@ Download start
    color     : var(--main-color1);
    font-size : 4.5rem;
 }
-#download button {
+#download button{
    padding      : 1.8rem 1.3rem;
    outline      : none;
    border       : none;
