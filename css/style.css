@@ -595,3 +595,76 @@ Client start
 /*--------
 Client end 
 --------*/
+
+
+/*-----------
+Pricing start 
+-----------*/
+#pricing .card{
+   border: none;
+   background: var(--main-color2);
+   transition: 0.5s;
+}
+#pricing .card-body{
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+#pricing .card .upper{
+   width: 100%;
+   border-bottom: 0.05rem solid #000;
+}
+#pricing .card .upper h3{
+   font-size: 2.7rem;
+   font-weight: 500;
+   font-family: 'Ubuntu', sans-serif;
+}
+#pricing .card .pricing{
+   display: flex;
+   justify-content: center;
+}
+#pricing .card .dollar{
+   font-size: 1.4rem;
+   align-self: flex-start;
+   margin-top: 2rem;
+}
+#pricing .card .pricing-price{
+   font-size: 5rem;
+   font-weight: 500;
+   color: var(--main-color1);
+}
+#pricing .card .duration{
+   font-size: 1.4rem;
+   align-self: flex-end;
+   margin-bottom: 1.6rem;
+}
+#pricing .card .allowance{
+   padding: 2rem 0 2rem 0;
+}
+#pricing .allowance .allowance-item{
+   padding: 0.6rem 0 0.6rem 0;
+   border-bottom: 0.05rem solid #636e72;
+   text-align: left;
+   font-size: 1.3rem;
+}
+#pricing .card .allowance .allowance-item i{
+   color: var(--main-color1);
+   margin-right: 0.7rem;
+}
+#pricing .card:hover{
+   box-shadow: var(--box-shadow2);
+}
+#pricing .card button {
+   padding: 1.8rem 1.3rem;
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   background: var(--main-color1);
+   box-shadow: var(--box-shadow1);
+   font-size: 1.7rem;
+   font-weight: 500;
+   color: #fff;
+   transition: 0.3s;
+}
+/*---------
+Pricing end 
+---------*/
