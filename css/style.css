@@ -27,19 +27,77 @@ common design start
 .section-padding{
    padding: 8rem 0;
 }
-.h3 {
-   font-size: 3rem;
+.h3{
+   font-size  : 3rem;
    font-weight: bold;
 }
 .span{
    color: var(--main-color1);
 }
 .card-h3{
-   font-size : 1.8rem;
+   font-size  : 1.8rem;
    font-weight: 600;
 }
 .margin-bottom{
    margin-bottom: 4rem;
+}
+.card.hover-effect-1,
+.card.hover-effect-2{
+   position: relative;
+   overflow: hidden;
+}
+.card.hover-effect-1::before,
+.card.hover-effect-1::after{
+   content   : '';
+   width     : 40%;
+   height    : 0.5rem;
+   background: var(--main-color1);
+   position  : absolute;
+   transition: 0.4s;
+}
+.card.hover-effect-1::before{
+   top      : -2rem;
+   left     : 50%;
+   transform: translateX(-50%);
+}
+.card.hover-effect-1::after{
+   width : 100%;
+   bottom: -2rem;
+   left  : 0;
+}
+.card.hover-effect-1:hover::before{
+   top: 0;
+}
+.card.hover-effect-1:hover::after{
+   bottom: 0;
+}
+.card.hover-effect-2:before,
+.card.hover-effect-2:after{
+   content   : '';
+   height    : 6rem;
+   width     : 6rem;
+   position  : absolute;
+   transition: 0.3s;
+}
+.card.hover-effect-2:before{
+   border-top : 0.8rem solid var(--bg-1);
+   border-left: 0.8rem solid var(--bg-1);
+   top        : -1rem;
+   left       : -1rem;
+}
+.card.hover-effect-2:after{
+   border-bottom: 0.8rem solid var(--bg-1);
+   border-right : 0.8rem solid var(--bg-1);
+   bottom       : -1rem;
+   right        : -1rem;
+}
+.card.hover-effect-2:hover::after{
+   right : 0;
+   bottom: 0;
+}
+.card.hover-effect-2:hover::before{
+   top : 0;
+   left: 0;
 }
 /*---------------
 common design end
@@ -361,21 +419,21 @@ Fun facts start
    font-size: 1.5rem;
 }
 #fun-facts .img-box img{
-   width: 60%;
+   width    : 60%;
    animation: up-down 2s linear infinite;
 }
 #fun-facts .card{
-   border: none;
-   box-shadow: var(--box-shadow1);
+   border       : none;
+   box-shadow   : var(--box-shadow1);
    border-radius: 1rem;
 }
 #fun-facts .card .number{
-   color: #fff;
-   font-size: 3rem;
+   color      : #fff;
+   font-size  : 3rem;
    font-weight: 500;
 }
 #fun-facts .card p{
-   color: #fff;
+   color    : #fff;
    font-size: 1.8rem;
 }
 #fun-facts .card.bg-1{
@@ -399,7 +457,7 @@ Fun facts end
 Screenshots start
 ---------------*/
 #screenshots .item{
-   width: 60%;
+   width : 60%;
    margin: 0 auto;
 }
 /*-------------
@@ -411,9 +469,9 @@ Screenshots end
 Download start
 ------------*/
 #download{
-   width: 100%;
-   background: var(--main-color1);
-   background-size: cover;
+   width            : 100%;
+   background       : var(--main-color1);
+   background-size  : cover;
    background-repeat: no-repeat;
 }
 #download h3{
@@ -423,29 +481,30 @@ Download start
    color: #000;
 }
 #download .card{
-   border: none;
-   box-shadow: var(--box-shadow1);
+   border        : none;
+   box-shadow    : var(--box-shadow1);
    padding-bottom: 2rem;
+   position      : relative;
 }
 #download .row h3{
    color: #000;
 }
 #download .row i{
    margin-top: 2rem;
-   color : var(--main-color1);
+   color     : var(--main-color1);
    font-size : 4.5rem;
 }
 #download button {
-   padding: 1.8rem 1.3rem;
-   outline: none;
-   border: none;
+   padding      : 1.8rem 1.3rem;
+   outline      : none;
+   border       : none;
    border-radius: 5rem;
-   background: var(--main-color1);
-   box-shadow: var(--box-shadow1);
-   font-size: 1.7rem;
-   font-weight: 500;
-   color: #fff;
-   transition: 0.3s;
+   background   : var(--main-color1);
+   box-shadow   : var(--box-shadow1);
+   font-size    : 1.7rem;
+   font-weight  : 500;
+   color        : #fff;
+   transition   : 0.3s;
 }
 /*----------
 Download end 
@@ -456,26 +515,26 @@ Download end
 Work start
 --------*/
 #work .card{
-   border: none;
-   background: var(--main-color2);
+   border     : none;
+   background : var(--main-color2);
+   transition : 0.4s;
    padding-top: 2rem;
-   transition: 0.4s;
 }
 #work .card:hover{
    box-shadow: var(--box-shadow2);
 }
 #work .card span{
-   display: block;
-   width: 6rem;
-   height: 6rem;
+   display      : block;
+   width        : 6rem;
+   height       : 6rem;
    border-radius: 50%;
-   line-height: 6rem;
-   background: var(--main-color1);
-   text-align: center;
-   color: #fff;
-   margin: 0 auto;
-   font-size: 3rem;
-   font-weight: 500;
+   line-height  : 6rem;
+   background   : var(--main-color1);
+   text-align   : center;
+   color        : #fff;
+   margin       : 0 auto;
+   font-size    : 3rem;
+   font-weight  : 500;
 }
 /*------
 Work end
