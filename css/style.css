@@ -15,6 +15,7 @@ html{
    --box-shadow1     : 0 5px 15px rgba(0,0,0,0.3);
    --light-background: #f7f7f7;
    --box-shadow2     : 0px 10px 30px rgba(57, 56, 61, 0.205);
+   --box-shadow3     : 0 5px 15px rgba(0,0,0,0.1);
    --bg-1            : #e91e63;
    --bg-2            : #eba834;
    --bg-3            : #09d69c;
@@ -699,3 +700,31 @@ Team start
 /*------
 Team end 
 ------*/
+
+
+/*-------
+FAQ start 
+-------*/
+#faq .accordion{
+   width: 90%;
+   margin: 0 auto;
+}
+#faq .accordion .accordion-header{
+   width: 100%;
+   box-shadow: var(--box-shadow2);
+   font-size: 1.8rem;
+   padding: 2rem 2.5rem;
+   border-radius: 2rem;
+   background: var(--main-color1);
+   color: #fff;
+   font-weight: 500;
+}
+#faq .accordion .accordion-content{
+   font-size: 1.2rem;
+   padding: 1.2rem 2rem;
+   background: var(--main-color2);
+   border-radius: 2rem;
+}
+/*-----
+FAQ end 
+-----*/
