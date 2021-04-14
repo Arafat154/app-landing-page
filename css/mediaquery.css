@@ -15,4 +15,11 @@
       width: 25rem;
       margin: 2rem auto;
    }
+   #contact .width{
+      width: 70%;
+      margin: 0 auto;
+   }
+   #contact .row .row{
+      margin-bottom: 3rem;
+   }
 }

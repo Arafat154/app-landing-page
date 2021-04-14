@@ -728,3 +728,69 @@ FAQ start
 /*-----
 FAQ end 
 -----*/
+
+/*-----------
+Contact Start 
+-----------*/
+#contact{
+   background: var(--main-color2);
+}
+#contact .row p.text-center{
+   font-size: 2rem;
+   font-weight: 500;
+}
+#contact .row .row i{
+   color: var(--main-color1);
+   display: block;
+   width: 3rem;
+   height: 3rem;
+   border: 0.02rem solid var(--main-color1);
+   border-radius: 50%;
+   text-align: center;
+   line-height: 3rem;
+   background: transparent;
+   font-size: 1.5rem;
+}
+#contact .row .row p:nth-child(1){
+   font-size: 1.6rem;
+   padding: 0;
+   margin: 0;
+   font-weight: 500;
+}
+#contact .row .row p:nth-child(2){
+   font-size: 1.2rem;
+   padding: 0.4rem 0.4rem 0.4rem 0;
+   margin: 0;
+}
+#contact .row form .one-row{
+   overflow: hidden;
+}
+#contact .row form .one-row input{
+   width: 48%;
+   margin-right: 4%;
+   float: left;
+}
+#contact .row form .one-row input:nth-child(2){
+   margin-right: 0;
+}
+#contact .row .col-md-8 input,
+#contact .row .col-md-8 textarea{
+   padding: 2rem 2rem 2rem 1.2rem;
+   font-size: 1.5rem;
+   outline: none;
+}
+#contact .row .col-md-8 button {
+   padding: 1.8rem 1.3rem;
+   outline: none;
+   border: none;
+   border-radius: 5rem;
+   background: var(--main-color1);
+   box-shadow: var(--box-shadow1);
+   font-size: 1.7rem;
+   font-weight: 500;
+   color: #fff;
+   transition: 0.3s;
+}
+/*---------
+Contact end
+---------*/
