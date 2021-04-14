@@ -548,7 +548,7 @@ Client start
    background: var(--main-color2);
 }
 #client .card{
-   width: 20rem;
+   width: 21rem;
    border: none;
    margin: 0 auto;
    background: var(--main-color2);
@@ -677,7 +677,7 @@ Team start
    background: var(--main-color2);
 }
 #team .card{
-   width: 20rem;
+   width: 21rem;
    margin: 0 auto;
    border: none;
    box-shadow: var(--box-shadow2);
