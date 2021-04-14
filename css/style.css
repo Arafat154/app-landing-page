@@ -742,14 +742,18 @@ Contact Start
 #contact .row .row i{
    color: var(--main-color1);
    display: block;
-   width: 3rem;
-   height: 3rem;
+   width: 3.2rem;
+   height: 3.2rem;
    border: 0.02rem solid var(--main-color1);
    border-radius: 50%;
    text-align: center;
-   line-height: 3rem;
-   background: transparent;
-   font-size: 1.5rem;
+   line-height: 3.2rem;
+   transition: 0.5s;
+   font-size: 1.7rem;
+}
+#contact .row .row i:hover{
+   background: var(--main-color1);
+   color: #fff;
 }
 #contact .row .row p:nth-child(1){
    font-size: 1.6rem;
