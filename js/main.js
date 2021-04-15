@@ -134,3 +134,9 @@ $(function(){
         }
     }
 })(jQuery);
+
+
+/*------------preloader---------------*/
+function myFunction() {
+   preloader.style.display = 'none';
+}
