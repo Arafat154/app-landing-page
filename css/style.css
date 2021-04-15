@@ -37,8 +37,8 @@ Preloader start
    width        : 20rem;
    height       : 20rem;
    border-radius: 50%;
-   border       : 1.5rem solid rgba(255, 255, 255, 0.3);
-   border-top   : 1.5rem solid #fff;
+   border       : 2rem solid rgba(255, 255, 255, 0.3);
+   border-top   : 2rem solid #fff;
    animation    : loader 2s linear infinite;
 }
 /*-----------
