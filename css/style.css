@@ -545,39 +545,39 @@ Work end
 Client start 
 ----------*/
 #client{
-   width: 100%;
+   width     : 100%;
    background: var(--main-color2);
 }
 #client .card{
-   width: 20rem;
-   border: none;
-   margin: 0 auto;
+   width     : 20rem;
+   border    : none;
+   margin    : 0 auto;
    background: var(--main-color2);
    box-shadow: var(--box-shadow2);
 }
 #client .card .img-box{
-   width: 10rem;
-   height: 10rem;
-   margin: 0 auto;
-   border: 0.5rem solid var(--main-color1);
+   width        : 10rem;
+   height       : 10rem;
+   margin       : 0 auto;
+   border       : 0.5rem solid var(--main-color1);
    border-radius: 50%;
-   position: relative;
+   position     : relative;
 }
 #client .card img{
    border-radius: 50%;
 }
 #client .card i{
-   width: 3rem;
-   height: 3rem;
-   background: var(--main-color1);
-   color: #fff;
-   line-height: 3rem;
-   display: block;
+   width        : 3rem;
+   height       : 3rem;
+   background   : var(--main-color1);
+   color        : #fff;
+   line-height  : 3rem;
+   display      : block;
    border-radius: 50%;
-   position: absolute;
-   top: 50%;
-   left: 90%;
-   transform: translateY(-50%);
+   position     : absolute;
+   top          : 50%;
+   left         : 90%;
+   transform    : translateY(-50%);
 }
 #client .card h3{
    font-size: 2.5rem;
@@ -586,11 +586,11 @@ Client start
    margin-top: -1.6rem;
 }
 #client .card .star i{
-   display: inline-block;
-   position: unset;
+   display   : inline-block;
+   position  : unset;
    background: none;
-   color: var(--bg-2);
-   font-size: 2rem;
+   color     : var(--bg-2);
+   font-size : 2rem;
 }
 /*--------
 Client end 
@@ -601,69 +601,69 @@ Client end
 Pricing start 
 -----------*/
 #pricing .card{
-   border: none;
+   border    : none;
    background: var(--main-color2);
    transition: 0.5s;
 }
 #pricing .card-body{
-   padding-top: 2rem;
+   padding-top   : 2rem;
    padding-bottom: 2rem;
 }
 #pricing .card .upper{
-   width: 100%;
+   width        : 100%;
    border-bottom: 0.02rem solid #95a5a6;
 }
 #pricing .card .upper h3{
-   font-size: 2.7rem;
+   font-size  : 2.7rem;
    font-weight: 500;
    font-family: 'Ubuntu', sans-serif;
 }
 #pricing .card .pricing{
-   display: flex;
+   display        : flex;
    justify-content: center;
 }
 #pricing .card .dollar{
-   font-size: 1.4rem;
+   font-size : 1.4rem;
    align-self: flex-start;
    margin-top: 2rem;
 }
 #pricing .card .pricing-price{
-   font-size: 5rem;
+   font-size  : 5rem;
    font-weight: 500;
-   color: var(--main-color1);
+   color      : var(--main-color1);
 }
 #pricing .card .duration{
-   font-size: 1.4rem;
-   align-self: flex-end;
+   font-size    : 1.4rem;
+   align-self   : flex-end;
    margin-bottom: 1.6rem;
 }
 #pricing .card .allowance{
    padding: 2rem 0 2rem 0;
 }
 #pricing .allowance .allowance-item{
-   padding: 0.6rem 0 0.6rem 0;
+   padding      : 0.6rem 0 0.6rem 0;
    border-bottom: 0.02rem solid #95a5a6;
-   text-align: left;
-   font-size: 1.3rem;
+   text-align   : left;
+   font-size    : 1.3rem;
 }
 #pricing .card .allowance .allowance-item i{
-   color: var(--main-color1);
+   color       : var(--main-color1);
    margin-right: 0.7rem;
 }
 #pricing .card:hover{
    box-shadow: var(--box-shadow2);
 }
 #pricing .card button {
-   padding: 1.8rem 1.3rem;
-   outline: none;
-   border: none;
+   padding      : 1.8rem 1.3rem;
+   outline      : none;
+   border       : none;
    border-radius: 5rem;
-   background: var(--main-color1);
-   box-shadow: var(--box-shadow1);
-   font-size: 1.7rem;
-   font-weight: 500;
-   color: #fff;
-   transition: 0.3s;
+   background   : var(--main-color1);
+   box-shadow   : var(--box-shadow1);
+   font-size    : 1.7rem;
+   font-weight  : 500;
+   color        : #fff;
+   transition   : 0.3s;
 }
 /*---------
 Pricing end 
@@ -674,28 +674,28 @@ Pricing end
 Team start 
 --------*/
 #team{
-   width: 100%;
+   width     : 100%;
    background: var(--main-color2);
 }
 #team .card{
-   width: 20rem;
-   margin: 0 auto;
-   border: none;
+   width     : 20rem;
+   margin    : 0 auto;
+   border    : none;
    box-shadow: var(--box-shadow2);
 }
 #team .card-body{
    padding: 2rem;
 }
 #team .card h3{
-   font-size: 2.5rem;
+   font-size  : 2.5rem;
    font-weight: 600;
-   margin-top: -0.03rem;
-   text-align: left;
+   margin-top : -0.03rem;
+   text-align : left;
 }
 #team .card span{
    font-size: 1.4rem;
-   margin: -3.5rem 0 0 1rem;
-   display: inline-block;
+   margin   : -3.5rem 0 0 1rem;
+   display  : inline-block;
 }
 /*------
 Team end 
@@ -706,23 +706,23 @@ Team end
 FAQ start 
 -------*/
 #faq .accordion{
-   width: 90%;
+   width : 90%;
    margin: 0 auto;
 }
 #faq .accordion .accordion-header{
-   width: 100%;
-   box-shadow: var(--box-shadow2);
-   font-size: 1.8rem;
-   padding: 2rem 2.5rem;
+   width        : 100%;
+   box-shadow   : var(--box-shadow2);
+   font-size    : 1.8rem;
+   padding      : 2rem 2.5rem;
    border-radius: 2rem;
-   background: var(--main-color1);
-   color: #fff;
-   font-weight: 500;
+   background   : var(--main-color1);
+   color        : #fff;
+   font-weight  : 500;
 }
 #faq .accordion .accordion-content{
-   font-size: 1.2rem;
-   padding: 1.2rem 2rem;
-   background: var(--main-color2);
+   font-size    : 1.2rem;
+   padding      : 1.2rem 2rem;
+   background   : var(--main-color2);
    border-radius: 2rem;
 }
 /*-----
@@ -736,65 +736,114 @@ Contact Start
    background: var(--main-color2);
 }
 #contact .row p.text-center{
-   font-size: 2rem;
+   font-size  : 2rem;
    font-weight: 500;
 }
 #contact .row .row i{
-   color: var(--main-color1);
-   display: block;
-   width: 3.2rem;
-   height: 3.2rem;
-   border: 0.02rem solid var(--main-color1);
+   color        : var(--main-color1);
+   display      : block;
+   width        : 3.2rem;
+   height       : 3.2rem;
+   border       : 0.02rem solid var(--main-color1);
    border-radius: 50%;
-   text-align: center;
-   line-height: 3.2rem;
-   transition: 0.5s;
-   font-size: 1.7rem;
+   text-align   : center;
+   line-height  : 3.2rem;
+   transition   : 0.5s;
+   font-size    : 1.7rem;
 }
 #contact .row .row i:hover{
    background: var(--main-color1);
-   color: #fff;
+   color     : #fff;
 }
 #contact .row .row p:nth-child(1){
-   font-size: 1.6rem;
-   padding: 0;
-   margin: 0;
+   font-size  : 1.6rem;
+   padding    : 0;
+   margin     : 0;
    font-weight: 500;
 }
 #contact .row .row p:nth-child(2){
    font-size: 1.2rem;
-   padding: 0.4rem 0.4rem 0.4rem 0;
-   margin: 0;
+   padding  : 0.4rem 0.4rem 0.4rem 0;
+   margin   : 0;
 }
 #contact .row form .one-row{
    overflow: hidden;
 }
 #contact .row form .one-row input{
-   width: 48%;
+   width       : 48%;
    margin-right: 4%;
-   float: left;
+   float       : left;
 }
 #contact .row form .one-row input:nth-child(2){
    margin-right: 0;
 }
 #contact .row .col-md-8 input,
 #contact .row .col-md-8 textarea{
-   padding: 2rem 2rem 2rem 1.2rem;
+   padding  : 2rem 2rem 2rem 1.2rem;
    font-size: 1.5rem;
-   outline: none;
+   outline  : none;
 }
 #contact .row .col-md-8 button {
-   padding: 1.8rem 1.3rem;
-   outline: none;
-   border: none;
+   padding      : 1.8rem 1.3rem;
+   outline      : none;
+   border       : none;
    border-radius: 5rem;
-   background: var(--main-color1);
-   box-shadow: var(--box-shadow1);
-   font-size: 1.7rem;
-   font-weight: 500;
-   color: #fff;
-   transition: 0.3s;
+   background   : var(--main-color1);
+   box-shadow   : var(--box-shadow1);
+   font-size    : 1.7rem;
+   font-weight  : 500;
+   color        : #fff;
+   transition   : 0.3s;
 }
 /*---------
 Contact end
 ---------*/
+
+
+/*----------
+Footer start 
+----------*/
+#footer{
+   background : var(--main-color1);
+   padding-top: 8rem;
+}
+#footer h3{
+   color      : #fff;
+   font-size  : 2.2rem;
+   font-weight: 600;
+}
+#footer p{
+   color    : #fff;
+   font-size: 1.3rem;
+}
+#footer ul{
+   margin: 0;
+}
+#footer ul li{
+   text-decoration: none;
+   list-style     : none;
+   padding        : 1rem 0 1rem 0;
+   transition     : 0.5s;
+}
+#footer ul li:nth-child(1){
+   padding-top: 0;
+}
+#footer ul li a{
+   color    : #fff;
+   font-size: 1.3rem;
+}
+#footer ul li:hover{
+   padding-left: 1.5rem; 
+}
+#footer .copy-right{
+   border-top : 0.1rem solid #fff;
+   padding-top: 2rem;
+}
+#footer p.text-center{
+   font-size  : 2rem;
+   font-weight: 500;
+   
+}
+/*--------
+Footer end 
+--------*/
